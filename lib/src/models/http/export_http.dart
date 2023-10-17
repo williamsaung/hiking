@@ -1,0 +1,1 @@
+export 'DetailModel.dart';
