@@ -7,6 +7,7 @@ import 'pages/export_pages.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
+  static const start = '/';
   static const register = '/register';
   static const login = '/login';
   static const bottomBarPages = '/bottomBarPages';

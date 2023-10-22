@@ -14,4 +14,5 @@ class ApiUrl {
   static const String verifyPhone = 'verify-phone/';
   static const String sendOTP = 'send-otp/';
   static const String campsite = 'campsite/';
+  static const String bookCampsite = 'booking/';
 }

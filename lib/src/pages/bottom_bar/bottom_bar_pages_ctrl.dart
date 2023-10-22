@@ -9,7 +9,7 @@ import '../../constants/export_constants.dart';
 class BottomBarPagesController extends BaseController with StateMixin {
   var currentIndex = 0.obs;
   var productNumber = 0.obs;
-
+  var isInMainPage = true.obs;
   var isUserPage = true.obs;
   var currentRouteName = ''.obs;
 
@@ -74,6 +74,11 @@ class BottomBarPagesController extends BaseController with StateMixin {
   }
 
   void changePage(int index, context) {
+    if (!isInMainPage.value) {
+      Get.offAllNamed(Routes.start, id: Keys.profileNavigationKey);
+      isInMainPage(true);
+      update();
+    }
     currentIndex(index);
     print(index);
   }

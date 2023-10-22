@@ -17,6 +17,27 @@ class CampsiteService extends HttpService {
     }
   }
 
+  Future<http.Response> bookCampsite({
+    required int campsiteID,
+    required String checkIn,
+    required String checkOut,
+    required int numberOfPeople,
+  }) async {
+    try {
+      var httpRequest =
+          makeRequest(RequestMethod.post, ApiUrl.bookCampsite, data: {
+        'campsite': campsiteID,
+        'check_in': checkIn,
+        'check_out': checkOut,
+        'number_of_people': numberOfPeople,
+      });
+      return httpRequest;
+    } catch (e) {
+      debugPrint("Save Error: $e");
+      rethrow;
+    }
+  }
+
   Future<http.Response> getCampsiteList() async {
     try {
       var httpRequest = makeRequest(

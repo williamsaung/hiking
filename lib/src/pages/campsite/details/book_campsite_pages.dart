@@ -124,7 +124,7 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                           if (picked != null &&
                               validateDateTimeRange(
                                 from: picked.toStringDate(),
-                                to: controller.toCtrl.text,
+                                to: controller.checkOut.text,
                               )) {
                             controller.setFromCtrl(TextFormatUtil.textFormat
                                 .formatCurrentDate(picked));
@@ -132,7 +132,7 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                         },
                         child: AbsorbPointer(
                           child: textFormFieldWithHintText(
-                              controller: controller.fromCtrl,
+                              controller: controller.checkIn,
                               keyboardType: TextInputType.datetime,
                               hintText: Texts.texts.from,
                               readonly: true),
@@ -166,7 +166,7 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                           );
                           if (picked != null &&
                               validateDateTimeRange(
-                                from: controller.fromCtrl.text,
+                                from: controller.checkIn.text,
                                 to: picked.toStringDate(),
                               )) {
                             controller.setToCtrl(TextFormatUtil.textFormat
@@ -175,7 +175,7 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                         },
                         child: AbsorbPointer(
                           child: textFormFieldWithHintText(
-                              controller: controller.toCtrl,
+                              controller: controller.checkOut,
                               keyboardType: TextInputType.text,
                               hintText: Texts.texts.to,
                               readonly: true),
@@ -188,6 +188,7 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                             fontWeight: FontWeight.w600, fontSize: 14.0),
                       ),
                       TextField(
+                        controller: controller.numberOfPeople,
                         decoration: InputDecoration(
                           labelText: 'Number of People',
                         ),
@@ -244,7 +245,9 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                             "Book Now",
                             style: TextStyle(fontWeight: FontWeight.normal),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            controller.clickBooking();
+                          },
                         ),
                       ),
                       verticalSpace(10),
