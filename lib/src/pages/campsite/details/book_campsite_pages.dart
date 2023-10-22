@@ -193,6 +193,40 @@ class BookCampsitePageState extends State<BookCampsitePage> {
                         ),
                         keyboardType: TextInputType.number,
                       ),
+                      verticalSpace(10),
+                      Column(
+                        children: List.generate(
+                          controller.checkListItems.length,
+                          (index) => CheckboxListTile(
+                            controlAffinity: ListTileControlAffinity.leading,
+                            contentPadding: EdgeInsets.zero,
+                            dense: true,
+                            title: Text(
+                              controller.checkListItems[index]["title"],
+                              style: const TextStyle(
+                                fontSize: 16.0,
+                                color: Colors.black,
+                              ),
+                            ),
+                            value: controller.checkListItems[index]["value"],
+                            onChanged: (value) {
+                              setState(() {
+                                controller.checkListItems[index]["value"] =
+                                    value;
+                                if (controller.multipleSelected.contains(
+                                    controller.checkListItems[index])) {
+                                  controller.multipleSelected
+                                      .remove(controller.checkListItems[index]);
+                                } else {
+                                  controller.multipleSelected
+                                      .add(controller.checkListItems[index]);
+                                }
+                              });
+                            },
+                          ),
+                        ),
+                      ),
+                      verticalSpace(10),
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
