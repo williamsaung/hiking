@@ -8,6 +8,6 @@ class Keys {
   static const int mapNavigationKey = 1;
   static const int profileNavigationKey3 = 2;
   static const int profileNavigationKey4 = 3;
-  static const int profileNavigationKey5 = 4;
+  static const int chatNavigation = 4;
   static const int myCampsiteNavigationKey = 5;
 }

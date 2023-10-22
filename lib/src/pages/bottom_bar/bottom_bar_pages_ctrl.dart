@@ -22,8 +22,6 @@ class BottomBarPagesController extends BaseController with StateMixin {
   ];
 
   List<Widget> get menuPages {
-    print('sh');
-    print(isUserPage.value);
     var routes = [
       Navigator(
         key: Get.nestedKey(Keys.profileNavigationKey),
@@ -38,8 +36,8 @@ class BottomBarPagesController extends BaseController with StateMixin {
         onGenerateRoute: Routes.profilePageGenerateRoute,
       ),
       Navigator(
-        key: Get.nestedKey(Keys.profileNavigationKey5),
-        onGenerateRoute: Routes.profilePageGenerateRoute,
+        key: Get.nestedKey(Keys.chatNavigation),
+        onGenerateRoute: Routes.chatPageGenerateRoute,
       ),
     ];
     var middleRoute = isUserPage.value

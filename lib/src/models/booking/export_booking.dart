@@ -1,0 +1,1 @@
+export 'BookingModel.dart';

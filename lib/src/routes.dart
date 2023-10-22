@@ -1,7 +1,4 @@
 import 'package:hiking/src/models/export_models.dart';
-import 'package:hiking/src/pages/campsite/details/book_campsite_pages.dart';
-import 'package:hiking/src/pages/map/map_page.dart';
-
 import 'configs/export_config.dart';
 import 'pages/export_pages.dart';
 import 'package:flutter/material.dart';
@@ -76,6 +73,10 @@ class Routes {
 
   static Route<dynamic>? myCampsitePageGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(builder: (_) => MyCampsitePage());
+  }
+
+  static Route<dynamic>? chatPageGenerateRoute(RouteSettings settings) {
+    return MaterialPageRoute(builder: (_) => NotificationPage());
   }
 
   static Route<dynamic>? mapPageGenerateRoute(RouteSettings settings) {
