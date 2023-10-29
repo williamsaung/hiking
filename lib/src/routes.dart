@@ -18,6 +18,7 @@ class Routes {
   static const completeProfile = '/completeProfile';
   static const myCampsite = '/myCampsite';
   static const addCampsiteForm = '/addCampsiteForm';
+  static const addBankInfo = '/addBankInfo';
   static const addCardInfo = '/addCardInfo';
   static const campsiteDetails = '/campsiteDetails';
   static const bookCampsite = '/bookCampsite';
@@ -58,6 +59,11 @@ class Routes {
     GetPage(
       name: addCampsiteForm,
       page: () => AddCampsiteFormPage(),
+      transition: Transition.fadeIn,
+    ),
+    GetPage(
+      name: addBankInfo,
+      page: () => AddBankInfoPage(),
       transition: Transition.fadeIn,
     ),
     GetPage(

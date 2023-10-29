@@ -12,3 +12,4 @@ export 'campsite/details/campsite_details_pages.dart';
 export 'campsite/details/book_campsite_pages.dart';
 export 'map/map_page.dart';
 export 'chat/notification_page.dart';
+export 'chat/add_bank_info_page.dart';

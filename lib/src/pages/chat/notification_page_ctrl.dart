@@ -30,6 +30,10 @@ class NotificationPageController extends BaseController with StateMixin {
     );
   }
 
+  addBankInfo() {
+    Get.toNamed(Routes.addBankInfo);
+  }
+
   Future<void> callAPIBooking() async {
     try {
       var response = campsiteService.getBookingList();

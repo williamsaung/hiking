@@ -22,9 +22,14 @@ class NotificationPage extends StatelessWidget {
                   return const Divider(height: 2);
                 },
                 itemBuilder: (context, index) {
-                  return NotificationItem(
-                    isEnabled: true,
-                    booking: controller.bookingList[index],
+                  return GestureDetector(
+                    onTap: () {
+                      controller.addBankInfo();
+                    },
+                    child: NotificationItem(
+                      isEnabled: true,
+                      booking: controller.bookingList[index],
+                    ),
                   );
                 },
                 itemCount: controller.bookingList.length,
