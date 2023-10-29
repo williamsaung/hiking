@@ -1,11 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:hiking/src/configs/export_config.dart';
-
 import 'add_bank_info_page_ctrl.dart';
 
-class AddBankInfoPage extends StatelessWidget {
-  final AddBankInfoPageController controller =
-      Get.put(AddBankInfoPageController());
+class AddBankInfoPage extends StatefulWidget {
+  final int bookingID;
+
+  const AddBankInfoPage({
+    super.key,
+    required this.bookingID,
+  });
+
+  @override
+  State<AddBankInfoPage> createState() => _AddBankInfoPageState();
+}
+
+class _AddBankInfoPageState extends State<AddBankInfoPage> {
+  late AddBankInfoPageController controller;
+
+  @override
+  void dispose() {
+    Get.delete<AddBankInfoPageController>();
+    super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    controller = Get.put(
+      AddBankInfoPageController(
+        bookingID: widget.bookingID,
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +44,7 @@ class AddBankInfoPage extends StatelessWidget {
         child: Column(
           children: [
             TextField(
+              controller: controller.bankNumber,
               decoration: InputDecoration(
                 labelText: 'Bank Number',
               ),
@@ -25,6 +52,7 @@ class AddBankInfoPage extends StatelessWidget {
             ),
             SizedBox(height: 16.0),
             TextField(
+              controller: controller.bankName,
               decoration: InputDecoration(
                 labelText: 'Bank Name',
               ),
@@ -32,7 +60,7 @@ class AddBankInfoPage extends StatelessWidget {
             SizedBox(height: 32.0),
             ElevatedButton(
               onPressed: () async {
-                await controller.navigateAfterBookingPage();
+                await controller.submitBankInfo();
                 // Add logic to process credit card information
               },
               child: Text('Submit'),

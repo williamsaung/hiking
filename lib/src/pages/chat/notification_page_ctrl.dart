@@ -1,6 +1,7 @@
 import '../../configs/export_config.dart';
 import 'package:hiking/src/utils/base_controller/base_controller.dart';
 
+import '../../constants/export_constants.dart';
 import '../../models/export_models.dart';
 import '../../services/export_services.dart';
 
@@ -10,6 +11,7 @@ class NotificationPageController extends BaseController with StateMixin {
 
   @override
   void onInit() {
+    print('shittt');
     initAPI();
     super.onInit();
   }
@@ -30,8 +32,9 @@ class NotificationPageController extends BaseController with StateMixin {
     );
   }
 
-  addBankInfo() {
-    Get.toNamed(Routes.addBankInfo);
+  addBankInfo(int bookingID) {
+    Get.toNamed(Routes.addBankInfo,
+        id: Keys.chatNavigation, arguments: {'bookingID': bookingID});
   }
 
   Future<void> callAPIBooking() async {

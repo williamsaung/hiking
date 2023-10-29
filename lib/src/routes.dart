@@ -62,11 +62,6 @@ class Routes {
       transition: Transition.fadeIn,
     ),
     GetPage(
-      name: addBankInfo,
-      page: () => AddBankInfoPage(),
-      transition: Transition.fadeIn,
-    ),
-    GetPage(
       name: addCardInfo,
       page: () => AddPaymentFormPage(),
       transition: Transition.fadeIn,
@@ -82,6 +77,15 @@ class Routes {
   }
 
   static Route<dynamic>? chatPageGenerateRoute(RouteSettings settings) {
+    final args = settings.arguments;
+    switch (settings.name) {
+      case addBankInfo:
+        Map<String, dynamic> arg = args as Map<String, dynamic>;
+        return MaterialPageRoute(
+            builder: (_) => AddBankInfoPage(
+                  bookingID: arg['bookingID'] as int,
+                ));
+    }
     return MaterialPageRoute(builder: (_) => NotificationPage());
   }
 

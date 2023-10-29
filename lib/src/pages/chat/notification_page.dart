@@ -3,7 +3,16 @@ import 'package:hiking/src/pages/chat/components/notification_item.dart';
 import '../../configs/export_config.dart';
 import 'notification_page_ctrl.dart';
 
-class NotificationPage extends StatelessWidget {
+class NotificationPage extends StatefulWidget {
+  const NotificationPage({
+    super.key,
+  });
+
+  @override
+  State<NotificationPage> createState() => _NotificationPageState();
+}
+
+class _NotificationPageState extends State<NotificationPage> {
   final NotificationPageController controller =
       Get.put(NotificationPageController());
 
@@ -24,7 +33,7 @@ class NotificationPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
-                      controller.addBankInfo();
+                      controller.addBankInfo(controller.bookingList[index].id!);
                     },
                     child: NotificationItem(
                       isEnabled: true,

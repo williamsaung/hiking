@@ -51,6 +51,18 @@ class CampsiteService extends HttpService {
     }
   }
 
+  Future<http.Response> updateBooking(
+    int bookingID,
+    Object data,
+  ) async {
+    var request = makeRequest(
+      RequestMethod.patch,
+      '${ApiUrl.bookCampsite}$bookingID/',
+      data: data,
+    );
+    return request;
+  }
+
   Future<http.Response> getCampsiteList() async {
     try {
       var httpRequest = makeRequest(
