@@ -8,10 +8,10 @@ import '../../services/export_services.dart';
 class NotificationPageController extends BaseController with StateMixin {
   List<Booking> bookingList = [];
   final CampsiteService campsiteService = CampsiteService();
+  final int userId = UserConfig.session!.id!;
 
   @override
   void onInit() {
-    print('shittt');
     initAPI();
     super.onInit();
   }

@@ -33,7 +33,11 @@ class _NotificationPageState extends State<NotificationPage> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
-                      controller.addBankInfo(controller.bookingList[index].id!);
+                      if (controller.userId !=
+                          controller.bookingList[index].created_user_id!) {
+                        controller
+                            .addBankInfo(controller.bookingList[index].id!);
+                      }
                     },
                     child: NotificationItem(
                       isEnabled: true,

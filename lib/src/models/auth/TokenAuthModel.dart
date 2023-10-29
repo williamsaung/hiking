@@ -6,10 +6,12 @@ part 'TokenAuthModel.g.dart';
 
 @JsonSerializable()
 class TokenAuthModel {
+  int? id;
   String prefix, token;
   int expiration;
 
   TokenAuthModel({
+    this.id,
     required this.prefix,
     required this.token,
     required this.expiration,

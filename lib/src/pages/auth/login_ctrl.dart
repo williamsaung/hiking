@@ -53,8 +53,6 @@ class LoginController extends GetxController {
       "email": loginTextController.email.text.trim(),
       "password": loginTextController.password.text.trim(),
     };
-    print(loginTextController.email.text.trim());
-    print(loginTextController.password.text.trim());
     try {
       var response = authenticationService.tokenAuth(data);
       await authenticationService.returnResponse(response, showOverlay: true,

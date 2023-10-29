@@ -12,6 +12,7 @@ class Booking {
   int status;
   String thumbnail_image;
   double price;
+  int? created_user_id;
 
   Booking(
       {this.id,
@@ -21,7 +22,8 @@ class Booking {
       required this.campsite,
       required this.status,
       required this.price,
-      required this.thumbnail_image});
+      required this.thumbnail_image,
+      this.created_user_id});
 
   factory Booking.fromJson(Map<String, dynamic> json) =>
       _$BookingFromJson(json);
