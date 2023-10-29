@@ -32,6 +32,11 @@ class NotificationPageController extends BaseController with StateMixin {
     );
   }
 
+  addPaymentSlip(int bookingID) {
+    Get.toNamed(Routes.addPaymentSlip,
+        id: Keys.chatNavigation, arguments: {'bookingID': bookingID});
+  }
+
   addBankInfo(int bookingID) {
     Get.toNamed(Routes.addBankInfo,
         id: Keys.chatNavigation, arguments: {'bookingID': bookingID});

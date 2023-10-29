@@ -17,6 +17,21 @@ class CampsiteService extends HttpService {
     }
   }
 
+  Future<http.Response> addUploadSlip(
+      {required int bookingID,
+      required Map<String, String> data,
+      required File image}) async {
+    try {
+      var httpRequest = makeRequestWithSingleFile(
+          RequestMethod.patch, '${ApiUrl.bookCampsite}$bookingID/',
+          data: data, fileList: image, fileKey: 'payment_slip');
+      return httpRequest;
+    } catch (e) {
+      debugPrint("Save Error: $e");
+      rethrow;
+    }
+  }
+
   Future<http.Response> bookCampsite({
     required int campsiteID,
     required String checkIn,

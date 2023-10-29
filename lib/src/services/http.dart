@@ -137,6 +137,38 @@ class HttpService {
     }
   }
 
+  Future<http.Response> makeRequestWithSingleFile(
+      RequestMethod method, String url,
+      {required Map<String, String>? data,
+      required File? fileList,
+      required String fileKey,
+      bool isMocki = false,
+      Map<String, dynamic>? queryParameters}) async {
+    Uri uri = checkEnvironment(url: url, queryParameters: queryParameters);
+    String body = jsonEncode(data);
+    late Future<http.Response> httpRequest;
+
+    try {
+      var request = method == RequestMethod.post
+          ? http.MultipartRequest("POST", uri)
+          : http.MultipartRequest("PATCH", uri);
+      request.fields.addAll(data as Map<String, String>);
+      if (fileList!.path.isNotEmpty) {
+        request.files
+            .add(await http.MultipartFile.fromPath(fileKey, fileList.path));
+      }
+      request.headers.addAll(headers);
+      var streamRequest = await request.send().timeout(timeOutFileUpload);
+      debugPrint("request: ${request.fields} ${request.files}");
+      httpRequest = http.Response.fromStream(streamRequest);
+      debugPrint("body: $body");
+      return httpRequest;
+    } catch (e) {
+      debugPrint("makeRequest: $e");
+      throw e.toString();
+    }
+  }
+
   String errorStatus(int resCode, String? text) {
     return kDebugMode
         ? "StatusCode: $resCode\n${text ?? defaultText(resCode)}"

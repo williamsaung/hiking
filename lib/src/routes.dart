@@ -1,4 +1,5 @@
 import 'package:hiking/src/models/export_models.dart';
+import 'package:hiking/src/pages/chat/add_payment_slip_page.dart';
 import 'configs/export_config.dart';
 import 'pages/export_pages.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,7 @@ class Routes {
   static const myCampsite = '/myCampsite';
   static const addCampsiteForm = '/addCampsiteForm';
   static const addBankInfo = '/addBankInfo';
+  static const addPaymentSlip = '/addPaymentSlip';
   static const addCardInfo = '/addCardInfo';
   static const campsiteDetails = '/campsiteDetails';
   static const bookCampsite = '/bookCampsite';
@@ -83,6 +85,12 @@ class Routes {
         Map<String, dynamic> arg = args as Map<String, dynamic>;
         return MaterialPageRoute(
             builder: (_) => AddBankInfoPage(
+                  bookingID: arg['bookingID'] as int,
+                ));
+      case addPaymentSlip:
+        Map<String, dynamic> arg = args as Map<String, dynamic>;
+        return MaterialPageRoute(
+            builder: (_) => AddPaymentSlipPage(
                   bookingID: arg['bookingID'] as int,
                 ));
     }
