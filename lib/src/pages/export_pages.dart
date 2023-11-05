@@ -9,6 +9,7 @@ export 'my_camp_site/my_campsite_pages.dart';
 export 'my_camp_site/add_campsite_form/add_campsite_form_pages.dart';
 export 'my_camp_site/add_campsite_form/add_payment_form_pages.dart';
 export 'campsite/details/campsite_details_pages.dart';
+export 'campsite/details/campsite_history_details_pages.dart';
 export 'campsite/details/book_campsite_pages.dart';
 export 'map/map_page.dart';
 export 'chat/notification_page.dart';

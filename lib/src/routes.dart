@@ -25,6 +25,7 @@ class Routes {
   static const checkPaymentSlip = '/checkPaymentSlip';
   static const addCardInfo = '/addCardInfo';
   static const campsiteDetails = '/campsiteDetails';
+  static const campsiteHistoryDetails = '/campsiteHistoryDetails';
   static const bookCampsite = '/bookCampsite';
 
   static List<GetPage<dynamic>>? getAll() => _route;
@@ -103,6 +104,12 @@ class Routes {
                   bookingID: arg['bookingID'] as int,
                   bankName: arg['bankName'] as String,
                   bankNumber: arg['bankNumber'] as String,
+                ));
+      case campsiteHistoryDetails:
+        Map<String, dynamic> arg = args as Map<String, dynamic>;
+        return MaterialPageRoute(
+            builder: (_) => CampsiteHistoryDetailsPage(
+                  booking: arg['booking'] as Booking,
                 ));
     }
     return MaterialPageRoute(builder: (_) => NotificationPage());

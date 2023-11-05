@@ -1,5 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import '../../constants/export_constants.dart';
+import '../export_models.dart';
 part 'BookingModel.g.dart';
 
 @JsonSerializable()
@@ -8,7 +9,6 @@ class Booking {
   String check_in;
   String check_out;
   int number_of_people;
-  int campsite;
   int status;
   String thumbnail_image;
   double price;
@@ -17,13 +17,13 @@ class Booking {
   String? bank_number;
   String? payment_slip;
   String? booking_number;
+  Campsite? campsite;
 
   Booking(
       {this.id,
       required this.check_in,
       required this.check_out,
       required this.number_of_people,
-      required this.campsite,
       required this.status,
       required this.price,
       required this.thumbnail_image,
@@ -31,7 +31,8 @@ class Booking {
       this.bank_name,
       this.bank_number,
       this.payment_slip,
-      this.booking_number});
+      this.booking_number,
+      this.campsite});
 
   factory Booking.fromJson(Map<String, dynamic> json) =>
       _$BookingFromJson(json);

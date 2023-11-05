@@ -51,6 +51,10 @@ class _NotificationPageState extends State<NotificationPage> {
                             controller.bookingList[index].id!,
                             controller.bookingList[index].bank_name!,
                             controller.bookingList[index].bank_number!);
+                      } else if (controller.userId ==
+                          controller.bookingList[index].created_user_id!) {
+                        controller
+                            .seeBookingDetails(controller.bookingList[index]);
                       }
                     },
                     child: NotificationItem(

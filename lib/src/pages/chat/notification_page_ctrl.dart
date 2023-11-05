@@ -46,6 +46,11 @@ class NotificationPageController extends BaseController with StateMixin {
     });
   }
 
+  seeBookingDetails(Booking booking) {
+    Get.toNamed(Routes.campsiteHistoryDetails,
+        id: Keys.historyNavigationKey, arguments: {'booking': booking});
+  }
+
   addBankInfo(int bookingID) {
     Get.toNamed(Routes.addBankInfo,
         id: Keys.historyNavigationKey, arguments: {'bookingID': bookingID});
