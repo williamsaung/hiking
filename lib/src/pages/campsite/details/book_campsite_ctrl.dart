@@ -4,6 +4,7 @@ import '../../../models/export_models.dart';
 import '../../../services/export_services.dart';
 import '../../../widgets/export_widgets.dart';
 import '../../bottom_bar/bottom_bar_pages_ctrl.dart';
+import '../../chat/notification_page_ctrl.dart';
 
 class BookCampsitePageController extends GetxController {
   TextEditingController checkIn = TextEditingController();
@@ -73,7 +74,8 @@ class BookCampsitePageController extends GetxController {
     try {
       await bookCampsiteService.returnResponse(
         response,
-        onSuccess: (responseJson) {
+        onSuccess: (responseJson) async {
+          await Get.find<NotificationPageController>().initAPI();
           navigateAfterBookingPage();
         },
       );

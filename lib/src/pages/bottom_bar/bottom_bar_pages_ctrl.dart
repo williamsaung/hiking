@@ -32,8 +32,8 @@ class BottomBarPagesController extends BaseController with StateMixin {
         onGenerateRoute: Routes.mapPageGenerateRoute,
       ),
       Navigator(
-        key: Get.nestedKey(Keys.profileNavigationKey4),
-        onGenerateRoute: Routes.profilePageGenerateRoute,
+        key: Get.nestedKey(Keys.historyNavigationKey),
+        onGenerateRoute: Routes.chatPageGenerateRoute,
       ),
       Navigator(
         key: Get.nestedKey(Keys.chatNavigation),

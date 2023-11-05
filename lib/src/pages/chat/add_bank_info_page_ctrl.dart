@@ -39,7 +39,7 @@ class AddBankInfoPageController extends GetxController {
       request,
       onSuccess: (_) async {
         await Get.find<NotificationPageController>().initAPI();
-        Get.off(NotificationPage(), id: Keys.chatNavigation);
+        Get.off(NotificationPage(), id: Keys.historyNavigationKey);
       },
     );
   }

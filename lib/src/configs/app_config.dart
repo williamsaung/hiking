@@ -61,7 +61,7 @@ class _Config {
   static const String environment = 'ENVIRONMENT';
 
   static Map<String, dynamic> localConstants = {
-    server: '192.168.1.113:8000',
+    server: '192.168.1.100:8000',
     name: 'local',
     environment: Environment.local,
   };

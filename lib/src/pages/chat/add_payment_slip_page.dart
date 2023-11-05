@@ -5,11 +5,14 @@ import 'add_payment_slip_page_ctrl.dart';
 
 class AddPaymentSlipPage extends StatefulWidget {
   final int bookingID;
+  final String bankName;
+  final String bankNumber;
 
-  const AddPaymentSlipPage({
-    super.key,
-    required this.bookingID,
-  });
+  const AddPaymentSlipPage(
+      {super.key,
+      required this.bookingID,
+      required this.bankName,
+      required this.bankNumber});
 
   @override
   State<AddPaymentSlipPage> createState() => _AddPaymentSlipPageState();
@@ -30,6 +33,8 @@ class _AddPaymentSlipPageState extends State<AddPaymentSlipPage> {
     controller = Get.put(
       AddPaymentSlipPageController(
         bookingID: widget.bookingID,
+        bankName: widget.bankName,
+        bankNumber: widget.bankNumber,
       ),
     );
   }
@@ -43,6 +48,21 @@ class _AddPaymentSlipPageState extends State<AddPaymentSlipPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            verticalSpace(15),
+            // show bank name and bank number
+            Text(
+              "Bank Name: ${widget.bankName}".toUpperCase(),
+              style:
+                  const TextStyle(fontWeight: FontWeight.w600, fontSize: 14.0),
+            ),
+            verticalSpace(15),
+            Text(
+              "Bank Number: ${widget.bankNumber}".toUpperCase(),
+              style:
+                  const TextStyle(fontWeight: FontWeight.w600, fontSize: 14.0),
+            ),
+
+            verticalSpace(15),
             TextButton(
               child: Text('Select Payment Slip'),
               onPressed: () {

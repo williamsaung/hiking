@@ -14,6 +14,8 @@ import '../../widgets/http_widgets/httpErrWidget.dart';
 class AddPaymentSlipPageController extends BaseController with StateMixin {
   final picker = ImagePicker();
   final int bookingID;
+  final String bankName;
+  final String bankNumber;
   RxString selectedImagePath = ''.obs;
   late CampsiteService campsiteService;
 
@@ -25,6 +27,8 @@ class AddPaymentSlipPageController extends BaseController with StateMixin {
 
   AddPaymentSlipPageController({
     required this.bookingID,
+    required this.bankName,
+    required this.bankNumber,
   });
 
   Future callAPIUploadSlip() async {

@@ -13,6 +13,9 @@ class Booking {
   String thumbnail_image;
   double price;
   int? created_user_id;
+  String? bank_name;
+  String? bank_number;
+  String? payment_slip;
 
   Booking(
       {this.id,
@@ -23,7 +26,10 @@ class Booking {
       required this.status,
       required this.price,
       required this.thumbnail_image,
-      this.created_user_id});
+      this.created_user_id,
+      this.bank_name,
+      this.bank_number,
+      this.payment_slip});
 
   factory Booking.fromJson(Map<String, dynamic> json) =>
       _$BookingFromJson(json);

@@ -34,14 +34,21 @@ class _NotificationPageState extends State<NotificationPage> {
                   return GestureDetector(
                     onTap: () {
                       if (controller.userId !=
+                              controller.bookingList[index].created_user_id! &&
+                          controller.bookingList[index].status == 2) {
+                        controller.checkPaymentSlip(
+                            controller.bookingList[index].payment_slip!);
+                      } else if (controller.userId !=
                           controller.bookingList[index].created_user_id!) {
                         controller
                             .addBankInfo(controller.bookingList[index].id!);
                       } else if (controller.userId ==
                               controller.bookingList[index].created_user_id! &&
                           controller.bookingList[index].status == 1) {
-                        controller
-                            .addPaymentSlip(controller.bookingList[index].id!);
+                        controller.addPaymentSlip(
+                            controller.bookingList[index].id!,
+                            controller.bookingList[index].bank_name!,
+                            controller.bookingList[index].bank_number!);
                       }
                     },
                     child: NotificationItem(
