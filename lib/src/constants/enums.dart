@@ -9,7 +9,7 @@ enum PageType { create, edit }
 
 enum CampsiteStatus { pending, accepted, rejected, paymentInfoFilled }
 
-enum BookingStatus { pending, waitingPayment, paymentComplete }
+enum BookingStatus { pending, waitingPayment, paymentComplete, approved }
 
 extension BookingStatusExtension on BookingStatus {
   String get text {
@@ -20,6 +20,8 @@ extension BookingStatusExtension on BookingStatus {
         return "Waiting Payment";
       case BookingStatus.paymentComplete:
         return "Payment Complete";
+      case BookingStatus.approved:
+        return "Approved";
     }
   }
 
@@ -31,6 +33,8 @@ extension BookingStatusExtension on BookingStatus {
         return 1;
       case BookingStatus.paymentComplete:
         return 2;
+      case BookingStatus.approved:
+        return 3;
     }
   }
 
@@ -42,6 +46,8 @@ extension BookingStatusExtension on BookingStatus {
         return BookingStatus.waitingPayment;
       case 2:
         return BookingStatus.paymentComplete;
+      case 3:
+        return BookingStatus.approved;
       default:
         throw ArgumentError("Invalid Booking Status value");
     }

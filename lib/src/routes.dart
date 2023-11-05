@@ -94,6 +94,7 @@ class Routes {
         return MaterialPageRoute(
             builder: (_) => CheckPaymentSlipPage(
                   paymentSlip: arg['paymentSlip'] as String,
+                  bookingID: arg['bookingID'] as int,
                 ));
       case addPaymentSlip:
         Map<String, dynamic> arg = args as Map<String, dynamic>;

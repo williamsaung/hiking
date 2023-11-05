@@ -6,10 +6,12 @@ import 'add_payment_slip_page_ctrl.dart';
 
 class CheckPaymentSlipPage extends StatefulWidget {
   final String paymentSlip;
+  final int bookingID;
 
   const CheckPaymentSlipPage({
     super.key,
     required this.paymentSlip,
+    required this.bookingID,
   });
 
   @override
@@ -31,6 +33,7 @@ class _CheckPaymentSlipPageState extends State<CheckPaymentSlipPage> {
     controller = Get.put(
       CheckPaymentSlipPageController(
         paymentSlip: widget.paymentSlip,
+        bookingID: widget.bookingID,
       ),
     );
   }
@@ -76,9 +79,7 @@ class _CheckPaymentSlipPageState extends State<CheckPaymentSlipPage> {
                 style: TextStyle(fontWeight: FontWeight.normal),
               ),
               onPressed: () {
-                print('haha');
-                // controller.goBook();
-                // Add your onPressed logic for Button 2
+                controller.callApproveBookingAPI();
               },
             )
           ],

@@ -32,9 +32,10 @@ class NotificationPageController extends BaseController with StateMixin {
     );
   }
 
-  checkPaymentSlip(String paymentSlip) {
+  checkPaymentSlip(String paymentSlip, int bookingID) {
     Get.toNamed(Routes.checkPaymentSlip,
-        id: Keys.historyNavigationKey, arguments: {'paymentSlip': paymentSlip});
+        id: Keys.historyNavigationKey,
+        arguments: {'paymentSlip': paymentSlip, 'bookingID': bookingID});
   }
 
   addPaymentSlip(int bookingID, String bankName, String bankNumber) {

@@ -37,9 +37,11 @@ class _NotificationPageState extends State<NotificationPage> {
                               controller.bookingList[index].created_user_id! &&
                           controller.bookingList[index].status == 2) {
                         controller.checkPaymentSlip(
-                            controller.bookingList[index].payment_slip!);
+                            controller.bookingList[index].payment_slip!,
+                            controller.bookingList[index].id!);
                       } else if (controller.userId !=
-                          controller.bookingList[index].created_user_id!) {
+                              controller.bookingList[index].created_user_id! &&
+                          controller.bookingList[index].status != 3) {
                         controller
                             .addBankInfo(controller.bookingList[index].id!);
                       } else if (controller.userId ==

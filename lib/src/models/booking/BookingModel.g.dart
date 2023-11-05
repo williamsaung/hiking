@@ -19,6 +19,7 @@ Booking _$BookingFromJson(Map<String, dynamic> json) => Booking(
       bank_name: json['bank_name'] as String?,
       bank_number: json['bank_number'] as String?,
       payment_slip: json['payment_slip'] as String?,
+      booking_number: json['booking_number'] as String?,
     );
 
 Map<String, dynamic> _$BookingToJson(Booking instance) => <String, dynamic>{
@@ -34,4 +35,5 @@ Map<String, dynamic> _$BookingToJson(Booking instance) => <String, dynamic>{
       'bank_name': instance.bank_name,
       'bank_number': instance.bank_number,
       'payment_slip': instance.payment_slip,
+      'booking_number': instance.booking_number,
     };

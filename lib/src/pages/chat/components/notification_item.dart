@@ -42,7 +42,7 @@ class NotificationItem extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
-                      'Booking ID: ${booking.id}',
+                      'Booking ID: ${booking.booking_number ?? booking.id}',
                       style: TextStyle(
                         fontSize: 13,
                         fontWeight: FontWeight.w500,
