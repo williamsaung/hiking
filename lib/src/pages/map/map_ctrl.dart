@@ -4,6 +4,8 @@ import '../../configs/export_config.dart';
 import '../../constants/export_constants.dart';
 
 class MapController extends GetxController {
+  final int userId = UserConfig.session!.id!;
+
   @override
   void onInit() {
     super.onInit();

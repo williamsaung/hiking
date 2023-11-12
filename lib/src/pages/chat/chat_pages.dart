@@ -24,13 +24,29 @@ class _ChatPageState extends State<ChatPage> {
   final _user = const types.User(id: '82091008-a484-4a89-ae75-a22bf8d6f3ac');
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-        body: Chat(
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Chat Page'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Chat(
           messages: _messages,
           onSendPressed: _handleSendPressed,
           user: _user,
         ),
-      );
+      ),
+    );
+
+    // Scaffold(
+    //   body: Chat(
+    //     messages: _messages,
+    //     onSendPressed: _handleSendPressed,
+    //     user: _user,
+    //   ),
+    // );
+  }
 
   void _addMessage(types.Message message) {
     setState(() {

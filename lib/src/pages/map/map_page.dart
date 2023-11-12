@@ -42,7 +42,6 @@ class _MapPageState extends State<mapPage> {
     try {
       var response = campsiteService.getCampsiteList();
       await campsiteService.returnResponse(response, onSuccess: (jsonString) {
-        print(jsonString['results']);
         for (var element in jsonString['results']) {
           markers.add(Marker(
             markerId: MarkerId(element['id'].toString()),
@@ -54,7 +53,7 @@ class _MapPageState extends State<mapPage> {
             onTap: () {
               _customInfoWindowController.addInfoWindow!(
                 Container(
-                  height: 300,
+                  height: 400,
                   width: 300,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -100,6 +99,22 @@ class _MapPageState extends State<mapPage> {
                           maxLines: 5,
                         ),
                       ),
+                      controller.userId == element['created_user_id']
+                          ? Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 10, left: 10, right: 10),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "Booking Request Number : ${element['booking_request']}",
+                                  ),
+                                  Text(
+                                    "Booking Confirmed Number : ${element['booking_confirmed']}",
+                                  ),
+                                ],
+                              ),
+                            )
+                          : Container(),
                       Padding(
                         padding:
                             const EdgeInsets.only(top: 10, left: 10, right: 10),
@@ -173,7 +188,7 @@ class _MapPageState extends State<mapPage> {
             ),
             CustomInfoWindow(
               controller: _customInfoWindowController,
-              height: 300,
+              height: 400,
               width: 300,
               offset: 35,
             ),
