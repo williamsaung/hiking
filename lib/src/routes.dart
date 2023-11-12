@@ -27,6 +27,7 @@ class Routes {
   static const campsiteDetails = '/campsiteDetails';
   static const campsiteHistoryDetails = '/campsiteHistoryDetails';
   static const bookCampsite = '/bookCampsite';
+  static const message = '/message';
 
   static List<GetPage<dynamic>>? getAll() => _route;
 
@@ -132,6 +133,8 @@ class Routes {
             builder: (_) => BookCampsitePage(
                   campsite: arg['result'] as Campsite,
                 ));
+      case message:
+        return MaterialPageRoute(builder: (_) => ChatPage());
       default:
         return MaterialPageRoute(builder: (_) => const mapPage());
     }

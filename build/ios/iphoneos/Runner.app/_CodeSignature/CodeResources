@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		Zx0cTTNSl0e2KolHPExjyiANlTs=
+		YoE/z1Yu4uZwz2EWRGwme1H1LlI=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		pfud09FYL4qKv1deEwjGk/ef554=
+		Dxa0nwKA+cZwl53GaQSlBUfVtxM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		ME0cAg6cl/bTZmwXEVgMugDccUI=
+		lo8YQDUqC+U+afj9Jh4BSTvxHV8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		GJMx2LqLwtt8nZxgNmb+whAVKZs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		AxawZmZvzIGO15w29cOYZIDSmyA=
+		E3XvAi31kIdOevZXwifS183fzx4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -82,11 +82,95 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		+iQyApozdpcbfdFFpArHRe+WUNM=
+		M/c2TYPaT5cA0JFGU7mlb9ns/wg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-arrow.png</key>
+		<data>
+		pV7YRKwrQ/Syw+t+RWc4LR3A+Zw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-attachment.png</key>
+		<data>
+		EKd0o56Q/WSDnK6YeV4bfwezcfM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-delivered.png</key>
+		<data>
+		gg3BOKq02RIq3T7DgqNsLHWn2+M=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-document.png</key>
+		<data>
+		Ra81gJeGB4wHrSzljrzqfx3AEnw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-error.png</key>
+		<data>
+		UHPJYAiHTkjIdZB4hpqQ9PQipak=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-seen.png</key>
+		<data>
+		iqWAXnx5ud+6s47KJ29uY/Xj6A4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-send.png</key>
+		<data>
+		dRkl9WeRnm0hps26MHMD5Zkbs4g=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-arrow.png</key>
+		<data>
+		2zAXCBNu24sJ72+8GFbhSZHNXJ8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-attachment.png</key>
+		<data>
+		KofIJ8YWjFkUOl9A6wH2/oj+mSI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-delivered.png</key>
+		<data>
+		EXyWC9SDaOYu8vCOjwjo5ijtIEI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-document.png</key>
+		<data>
+		Mb6rfvlb3wIwyx7nX4F+UqsTE3M=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-error.png</key>
+		<data>
+		E/UVSmkR+qHA6ygn5eCmj4JdVn8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-seen.png</key>
+		<data>
+		hsKihGd496DldYU7CmkcanQlJ+w=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-send.png</key>
+		<data>
+		LWuani7O+skr/SGDSCbG3fsMldc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-arrow.png</key>
+		<data>
+		z7KI/WnbdvpA8D3df10Y6HZk6SY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-attachment.png</key>
+		<data>
+		NRcb3/kzXPGvjwsYAgMT2GfQ9KM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-delivered.png</key>
+		<data>
+		m31I5MDE8/gznfQxkmKl83CzZ7Q=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-document.png</key>
+		<data>
+		ZdAu87k0p3551uf+r0OGqGWbjAo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-error.png</key>
+		<data>
+		YJi+RZfBplONYI1vDIg2z0l6t98=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-seen.png</key>
+		<data>
+		893QeLRSbbWrdM8lCiR/hYv4qxg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-send.png</key>
+		<data>
+		b2X0CVUn2jX1FIeghqn1NrWYMQk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -190,7 +274,7 @@
 		</data>
 		<key>Frameworks/flutter_keyboard_visibility.framework/flutter_keyboard_visibility</key>
 		<data>
-		hBc1hEDTYt6Q50l8UVAxp9B+06g=
+		OOZBZTAWZQGDuIE0CjcPpiB0D0g=
 		</data>
 		<key>Frameworks/geolocator_apple.framework/Info.plist</key>
 		<data>
@@ -202,7 +286,7 @@
 		</data>
 		<key>Frameworks/geolocator_apple.framework/geolocator_apple</key>
 		<data>
-		SAxipkLWHmfVvIptcRtEvZrIVZo=
+		ErEAwpe2+1Hp8qZ9tlOmnCZD7fQ=
 		</data>
 		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
 		<data>
@@ -214,7 +298,7 @@
 		</data>
 		<key>Frameworks/image_picker_ios.framework/image_picker_ios</key>
 		<data>
-		3y40s+sUIUuV5Dpz4m4lMzs5zS8=
+		W3qEvDA5XF/rGmkY0fP+iUdJ2NM=
 		</data>
 		<key>Frameworks/location.framework/Info.plist</key>
 		<data>
@@ -226,7 +310,7 @@
 		</data>
 		<key>Frameworks/location.framework/location</key>
 		<data>
-		PhW+7oLrmqkyegKGAPqWxnRS0R8=
+		gKOZwZwwJzIGzDBI4Vnql+iUyRs=
 		</data>
 		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
 		<data>
@@ -238,7 +322,19 @@
 		</data>
 		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
 		<data>
-		VGqB8AQfJDvQAkmeWz/NJ6tCs7E=
+		+yv/ZxDqyLFyVS3lxIFACYsx4Co=
+		</data>
+		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
+		<data>
+		w+qhsAOWkcA5EhMtqmGMGoOp5IM=
+		</data>
+		<key>Frameworks/url_launcher_ios.framework/_CodeSignature/CodeResources</key>
+		<data>
+		dW4TIAhTj1GVSXEwnad29Smghv4=
+		</data>
+		<key>Frameworks/url_launcher_ios.framework/url_launcher_ios</key>
+		<data>
+		ueYT5X+71pdV95G1bMGOnDkS26o=
 		</data>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>
 		<data>
@@ -1122,7 +1218,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zQ0EpdI+LMnIhihBznP+7XpfEFG70Cc8j8SwHuaj9BA=
+			qBrevnQuTc+ISmakx+UKhWCOABbJYe6ZIyl3Qm6H1sI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -1136,21 +1232,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rQtuwQyaqzk+b66Kk0AOAYFqiUdNbho03W7J+SNGQTc=
+			DBqfDhMflMYY5+SjI7z2h0HzwkIPQMubho++AB/df54=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK9VrT1vIYmP534P8JLRoc2lLJQbaGDpko1FyK+MCV0=
+			t4SPs5DK+MHQz2TRiT6GVgk4RblpZ8gtv45iFvpVUFk=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			DGKFfPAeR7wRlL7tlCn+SlMGd3DkyizzVcRO5O+zDC0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -1164,7 +1260,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IGHMH9fMiE86DfM2SPycerAdcg00grKQxyU3sYQf3YI=
+			Bqe5TE8SHcGDaHlIuK8fOorPfO+ynVPdTsqzGVMZRlQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -1185,7 +1281,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f4E7/IBQFQ7JDeQykjoGSN8H9b8qxu+LytD1UpUiRLM=
+			v2KgM6iNyGMVlJK4K7ySonKK3tRuE8YDarO1kPm5sgQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -1193,6 +1289,153 @@
 			<key>hash2</key>
 			<data>
 			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-arrow.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZDZZXjgfj88wvdRAwXSf48wAT/an4G71AZWCeBUuRMg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-attachment.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/yRvgbabfHQTc1mBo2Lbdadrqymh68+dY99QJr4aDHQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-delivered.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JnTAGUlcuMnCGc76If9JaRzTfuotin2yuqkVgK1c/lg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-document.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QLvet56aPYz695N+ICydtZv9jrzQBxGl1ch35qbrOPs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-error.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			burnElQO5xZz80QIrwO/LinQsBS912AY8iK3QJL0S5A=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-seen.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TsjjpJwb/j8CDMjQnn4anZaW73HXPZ8JcVmZ2OJf9ng=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/2.0x/icon-send.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KJAFBga8HlNul4hbn9eikXEZSlM6Jg0YH32BD41WgXI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-arrow.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l2Jj5XEsAEDoH4m/mbGHur59f8aLQXvqxH9iv/YYjVw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-attachment.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oBJJ/4a5RIV2qJecI8hny6XS2o7loYCY4v2r6VeK6aQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-delivered.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			POFXE/Xngj0JHe2gd/SJc2Q78CYXgTDWNR41YLdUA8c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-document.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zBHElKCFCLnEghRwKygTsHG53aKOU73CEdH8FS9IyYs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-error.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SIXtFq00LnmSgbIFiO/cwAJjC5SpuhhzQIeJ2QnZwRs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-seen.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			inHb73SDt52w69mXu1YuskpYeQEL4J4Zx6wCSSSTXKo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/3.0x/icon-send.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bzs9ae/BGj5Wbigs9unnaTeEUhNCgGMkncxW3aoncQs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-arrow.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RVjcL+FEVBTbZXfitXRnVz+ToiXqA3xk0b488cjHcSc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-attachment.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rnF1hqg6EB9to/qIdR1TXj3CZYDV1NIFiRJPZfG/Lt4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-delivered.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zTwAcPr6Bml3bm+fRW144j+KKDA7bJGHjKh6p2mPqco=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-document.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rW9FH3sWQetB1zKg2FuDEGy4LTHwpXItsWFB5VMdf7g=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-error.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zLFK2LTnQplBethtZTzjxo6iRUD0k8JLuzZrN+dJm3Y=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-seen.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sscXJAy11h7OkjCG6MU8veJCrWyt2tzUMEVWVLeQiYQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/packages/flutter_chat_ui/assets/icon-send.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w/0lvnC2BC47B6d0UTs5yp9zZ8btwwNEs2UqdRKMfQ8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/shaders/ink_sparkle.frag</key>
@@ -1374,7 +1617,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bJaBcUrisxIFnD1ce6gNClc+yJI2/1dRZCmQscZD3N0=
+			d6mowUFYNg19JLmgQLqlED7z3zHF2hIMhlJInfZYcyA=
 			</data>
 		</dict>
 		<key>Frameworks/geolocator_apple.framework/Info.plist</key>
@@ -1395,7 +1638,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5sLpqpoh19VPrhau6hW7MhGwDg1JEzfaQwAKvFpU/Q=
+			sjuf6lsQAiFXXT4CIM9nmRgAKo+po+rfJQ/x1cCmGcw=
 			</data>
 		</dict>
 		<key>Frameworks/image_picker_ios.framework/Info.plist</key>
@@ -1416,7 +1659,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GyQhk4LpKsTrMKIsN/NqYSR+QR9arSvI19CASNzNiyU=
+			CCvf61gW5wLMpPYipo3mNUh6Ekv2LAXBMkw13amFOek=
 			</data>
 		</dict>
 		<key>Frameworks/location.framework/Info.plist</key>
@@ -1437,7 +1680,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mN/qzmz0Cq6NF3cowmAetDdCAzqu+2SpA57eVF9op0U=
+			kYzZIt+0EuYmHOOmht4zE6rz8Uecz47KKIq3mcwyBnM=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
@@ -1458,7 +1701,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ZGublGfQbn3mI/pqpDmU272CLskSpXvAy2O17PfTbg=
+			vNYHRiHK8q/uRHmm502+fhPP7FOOjYW/eovC4uk/llM=
+			</data>
+		</dict>
+		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LMbWcbqUZvuyXw1Nwf9ZalrnS6t4tlNUtD7SHDycDwY=
+			</data>
+		</dict>
+		<key>Frameworks/url_launcher_ios.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5ljMMmsYe91JeU68SGXBuyXv0LQHTZGZghtbh3JVSmk=
+			</data>
+		</dict>
+		<key>Frameworks/url_launcher_ios.framework/url_launcher_ios</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			71KNhei+0EwPrijsulO2GPVa+zSsWYcmTXSys7rtGdc=
 			</data>
 		</dict>
 		<key>GoogleMaps.bundle/GMSCacheStorage.momd/Storage.mom</key>

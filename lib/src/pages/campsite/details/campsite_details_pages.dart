@@ -157,6 +157,7 @@ class CampsiteDetailsPageState extends State<CampsiteDetailsPage> {
                                       TextStyle(fontWeight: FontWeight.normal),
                                 ),
                                 onPressed: () {
+                                  controller.goMessage();
                                   // Add your onPressed logic for Button 1
                                 },
                               ),

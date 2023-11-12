@@ -11,4 +11,8 @@ class CampsiteDetailsPageController extends GetxController {
     Get.toNamed(Routes.bookCampsite,
         id: Keys.mapNavigationKey, arguments: {'result': campsite});
   }
+
+  goMessage() async {
+    Get.toNamed(Routes.message, id: Keys.mapNavigationKey);
+  }
 }
