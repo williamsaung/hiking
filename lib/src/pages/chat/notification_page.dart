@@ -33,6 +33,8 @@ class _NotificationPageState extends State<NotificationPage> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
+                      print(controller.userId);
+                      print(controller.bookingList[index].created_user_id!);
                       if (controller.userId !=
                               controller.bookingList[index].created_user_id! &&
                           controller.bookingList[index].status == 2) {
